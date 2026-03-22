@@ -71,8 +71,8 @@ function AuthPage() {
     }
 
     const url = isLogin
-      ? "http://localhost:8000/api/auth/login"
-      : "http://localhost:8000/api/auth/register";
+      ? "https://lanalyzer-backend.onrender.com/api/auth/login"
+      : "https://lanalyzer-backend.onrender.com/api/auth/register";
 
     setLoading(true);
 
