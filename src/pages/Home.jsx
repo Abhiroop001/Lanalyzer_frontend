@@ -73,7 +73,7 @@ export default function Home() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:8000/api/documents/upload", {
+      const res = await fetch("https://lanalyzer-backend.onrender.com/api/documents/upload", {
         method: "POST",
         body: formData,
       });
