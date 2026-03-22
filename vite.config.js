@@ -7,6 +7,22 @@ export default defineConfig({
     host: '0.0.0.0',
     port: process.env.PORT || 5173,
     strictPort: false,
-    allowedHosts: 'all'
+    allowedHosts: [
+      'lanalyzer-frontend.onrender.com',
+      'localhost',
+      '127.0.0.1',
+      '.onrender.com'
+    ]
   },
+  preview: {
+    host: '0.0.0.0',
+    port: process.env.PORT || 5173,
+    strictPort: false,
+    allowedHosts: [
+      'lanalyzer-frontend.onrender.com',
+      'localhost',
+      '127.0.0.1',
+      '.onrender.com'
+    ]
+  }
 })
