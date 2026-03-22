@@ -57,7 +57,7 @@ export default function ChatPanel({ docId, token }) {
     setChat((prev) => [...prev, { type: "user", text: userQuestion, timestamp: new Date() }]);
 
     try {
-      const res = await fetch("http://localhost:8000/api/analysis/ask", {
+      const res = await fetch("https://lanalyzer-backend.onrender.com/api/analysis/ask", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
