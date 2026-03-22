@@ -278,9 +278,9 @@ export default function Home() {
     try {
       let url;
       if (endpointKey === "compress") {
-        url = "http://localhost:8000/api/compression/compress";
+        url = "https://lanalyzer-backend.onrender.com/api/compression/compress";
       } else {
-        url = `http://localhost:8000/api/analysis/${endpointKey}`;
+        url = `https://lanalyzer-backend.onrender.com/api/analysis/${endpointKey}`;
       }
 
       const res = await fetch(url, {
